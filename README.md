@@ -1,6 +1,6 @@
 # How to publish a module to maven
 
-1.In project `build.gradle` .Add
+1 .In project `build.gradle` .Add
 
 ```
 buildscript {
@@ -10,7 +10,7 @@ buildscript {
     }
 }
 ```
-2. In module `build.gradle` .Add on top of file
+2 . In module `build.gradle` .Add on top of file
 
 ` apply plugin: 'bintray-release'`
 
@@ -29,14 +29,15 @@ publish {
 }
 ```
 
-userOrg: organization name //must same at on bintray
+`userOrg: organization name //must same at on bintray
 repoName: repository name // must same at on bintray
 groupId: directory contain artifactId package
-artifactId: package name
+artifactId: package name`
 
-More information about configuration reference at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
 
-3. Run on terminal
+More information about configurations reference at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
+
+3 . Run on terminal
 `./gradlew clean build bintrayUpload -PbintrayUser=YOUR_USER_NAME -PbintrayKey=YOUR_KEY -PdryRun=false --stacktrace`
 
 
