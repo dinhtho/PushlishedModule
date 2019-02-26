@@ -34,6 +34,8 @@ repoName: repository name // must same at on bintray
 groupId: directory contain artifactId package
 artifactId: package name
 
+More information about configuration reference at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
+
 3. Run on terminal
 `./gradlew clean build bintrayUpload -PbintrayUser=YOUR_USER_NAME -PbintrayKey=YOUR_KEY -PdryRun=false --stacktrace`
 
