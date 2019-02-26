@@ -35,10 +35,16 @@ groupId: directory contain artifactId package  <br />
 artifactId: package name
 
 
-More information about configurations reference at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
+More information about configurations referenced at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
 
 3 . Run on terminal
 `./gradlew clean build bintrayUpload -PbintrayUser=YOUR_USER_NAME -PbintrayKey=YOUR_KEY -PdryRun=false --stacktrace`
 
+4. Result
 
+`maven {
+             url  "https://tho.bintray.com/tho"
+         }`
+
+         `compile 'com.dinhtho:SectionDecoration:1.0'`
 
