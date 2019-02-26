@@ -29,10 +29,10 @@ publish {
 }
 ```
 
-`userOrg: organization name //must same at on bintray
-repoName: repository name // must same at on bintray
-groupId: directory contain artifactId package
-artifactId: package name`
+userOrg: organization name //must same at on bintray <br />
+repoName: repository name // must same at on bintray <br />
+groupId: directory contain artifactId package  <br />
+artifactId: package name
 
 
 More information about configurations reference at https://github.com/novoda/bintray-release/wiki/Configuration-of-the-publish-closure
